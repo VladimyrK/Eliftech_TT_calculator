@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/Eliftech_TT_calculator/static/css/main.534ab34b.css",
-    "main.js": "/Eliftech_TT_calculator/static/js/main.767a1e6e.js",
+    "main.css": "/Eliftech_TT_calculator/static/css/main.f12be4c4.css",
+    "main.js": "/Eliftech_TT_calculator/static/js/main.3c68e33a.js",
+    "static/css/733.3aeb9254.chunk.css": "/Eliftech_TT_calculator/static/css/733.3aeb9254.chunk.css",
+    "static/js/733.1eb3d554.chunk.js": "/Eliftech_TT_calculator/static/js/733.1eb3d554.chunk.js",
+    "static/css/516.31d6cfe0.chunk.css": "/Eliftech_TT_calculator/static/css/516.31d6cfe0.chunk.css",
+    "static/js/516.f8348929.chunk.js": "/Eliftech_TT_calculator/static/js/516.f8348929.chunk.js",
     "index.html": "/Eliftech_TT_calculator/index.html",
-    "main.534ab34b.css.map": "/Eliftech_TT_calculator/static/css/main.534ab34b.css.map",
-    "main.767a1e6e.js.map": "/Eliftech_TT_calculator/static/js/main.767a1e6e.js.map"
+    "main.f12be4c4.css.map": "/Eliftech_TT_calculator/static/css/main.f12be4c4.css.map",
+    "main.3c68e33a.js.map": "/Eliftech_TT_calculator/static/js/main.3c68e33a.js.map",
+    "733.3aeb9254.chunk.css.map": "/Eliftech_TT_calculator/static/css/733.3aeb9254.chunk.css.map",
+    "733.1eb3d554.chunk.js.map": "/Eliftech_TT_calculator/static/js/733.1eb3d554.chunk.js.map",
+    "516.f8348929.chunk.js.map": "/Eliftech_TT_calculator/static/js/516.f8348929.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.534ab34b.css",
-    "static/js/main.767a1e6e.js"
+    "static/css/main.f12be4c4.css",
+    "static/js/main.3c68e33a.js"
   ]
 }
