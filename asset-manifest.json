@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Eliftech_TT_calculator/static/css/main.534ab34b.css",
-    "main.js": "/Eliftech_TT_calculator/static/js/main.3a7c3100.js",
+    "main.js": "/Eliftech_TT_calculator/static/js/main.767a1e6e.js",
     "index.html": "/Eliftech_TT_calculator/index.html",
     "main.534ab34b.css.map": "/Eliftech_TT_calculator/static/css/main.534ab34b.css.map",
-    "main.3a7c3100.js.map": "/Eliftech_TT_calculator/static/js/main.3a7c3100.js.map"
+    "main.767a1e6e.js.map": "/Eliftech_TT_calculator/static/js/main.767a1e6e.js.map"
   },
   "entrypoints": [
     "static/css/main.534ab34b.css",
-    "static/js/main.3a7c3100.js"
+    "static/js/main.767a1e6e.js"
   ]
 }
