@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 
-import './ContactListItem.module.css';
+import './BanksListItem.module.css';
 
-function ContactListItem({
+function BanksListItem({
   id,
   bankName,
   interestRate,
   maxLoan,
   minPayment,
   loanTerm,
-  onDeleteContact,
+  onDeleteBank,
+  onEditBank,
 }) {
   return (
     <li>
@@ -17,18 +18,21 @@ function ContactListItem({
         {bankName} - Interest rate: {interestRate}%; Maximum loan: {maxLoan}$;
         Minimum payment: {minPayment}%; Loan term: {loanTerm} months
       </p>
-      <button type="button" onClick={() => onDeleteContact(id)}>
+      <button type="button" onClick={() => onDeleteBank(id)}>
         Delete
+      </button>
+      <button type="button" onClick={() => onEditBank(id)}>
+        Edit
       </button>
     </li>
   );
 }
 
-ContactListItem.propTypes = {
+BanksListItem.propTypes = {
   id: PropTypes.string,
   bankName: PropTypes.string,
   number: PropTypes.string,
   onDeleteContact: PropTypes.func,
 };
 
-export default ContactListItem;
+export default BanksListItem;

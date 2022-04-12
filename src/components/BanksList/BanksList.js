@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 
-import ContactListItem from '../ContactListItem';
+import BanksListItem from '../BanksListItem';
 import './BanksList.module.css';
 
-const BanksList = ({ items, onDeleteContact }) => {
+const BanksList = ({ items, onDeleteBank, onEditBank }) => {
   return (
     <ul>
       {items.map(
         ({ id, bankName, interestRate, maxLoan, minPayment, loanTerm }) => (
-          <ContactListItem
+          <BanksListItem
             key={id}
             id={id}
             bankName={bankName}
@@ -16,7 +16,8 @@ const BanksList = ({ items, onDeleteContact }) => {
             maxLoan={maxLoan}
             minPayment={minPayment}
             loanTerm={loanTerm}
-            onDeleteContact={onDeleteContact}
+            onDeleteBank={onDeleteBank}
+            onEditBank={onEditBank}
           />
         )
       )}

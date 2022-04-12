@@ -9,19 +9,31 @@ function App() {
     () => JSON.parse(window.localStorage.getItem('banks')) ?? []
   );
   const [filter, setFilter] = useState('');
-
-  console.log(banks);
+  const [editedBank, setEditedBank] = useState('');
 
   useEffect(() => {
     window.localStorage.setItem('banks', JSON.stringify(banks));
   }, [banks]);
 
-  const formSubmitHandler = data => {
+  const addBankData = (data, reset) => {
+    editedBank &&
+      setBanks(banks => banks.filter(bank => bank.id !== editedBank.id));
+    setBanks(banks => [...banks, data]);
+    reset();
+    setEditedBank('');
+  };
+
+  const formSubmitHandler = (data, reset) => {
     banks.find(
       bank => bank.bankName.toLowerCase() === data.bankName.toLowerCase()
-    )
+    ) && !editedBank
       ? alert('This bank name already in banks')
-      : setBanks(banks => [...banks, data]);
+      : addBankData(data, reset);
+  };
+
+  const formCancelHandler = reset => {
+    setEditedBank('');
+    reset();
   };
 
   const filterbanks = () => {
@@ -36,13 +48,20 @@ function App() {
   return (
     <div className="App">
       <h1>Mortgage calculator</h1>
-      <BankForm onSubmit={formSubmitHandler} />
-      <h2>banks</h2>
+      <BankForm
+        onSubmit={formSubmitHandler}
+        onCancel={formCancelHandler}
+        editedBank={editedBank}
+      />
+      <h2>Banks</h2>
       <Filter value={filter} onFilter={e => setFilter(e.currentTarget.value)} />
       <BanksList
         items={filteredbanks}
-        onDeleteContact={id => {
+        onDeleteBank={id => {
           setBanks(banks => banks.filter(bank => bank.id !== id));
+        }}
+        onEditBank={id => {
+          setEditedBank(banks.find(bank => bank.id === id));
         }}
       />
     </div>
