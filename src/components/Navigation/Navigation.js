@@ -9,7 +9,7 @@ export default function Navigation() {
         className={({ isActive }) => (isActive ? s.activeLink : s.link)}
         to="/"
       >
-        Home
+        Banks
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? s.activeLink : s.link)}

@@ -7,7 +7,7 @@ import './BankForm.module.css';
 
 import Input from '../Input';
 
-function ContactForm({ onSubmit, onCancel, editedBank }) {
+function BankForm({ onSubmit, onCancel, editedBank }) {
   const [bankName, setBankName] = useState('');
   const [interestRate, setInterestRate] = useState('');
   const [maxLoan, setMaxLoan] = useState('');
@@ -96,8 +96,9 @@ function ContactForm({ onSubmit, onCancel, editedBank }) {
   );
 }
 
-ContactForm.propTypes = {
+BankForm.propTypes = {
   onSubmit: PropTypes.func,
+  onCancel: PropTypes.func,
 };
 
-export default ContactForm;
+export default BankForm;

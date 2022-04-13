@@ -7,17 +7,7 @@ function BanksList({ items, onDeleteBank, onEditBank }) {
   return (
     <ul>
       {items.map(
-        ({
-          id,
-          bankName,
-          interestRate,
-          maxLoan,
-          minPayment,
-          loanTerm,
-          monthPayment,
-          downPayment,
-          initialLoan,
-        }) => (
+        ({ id, bankName, interestRate, maxLoan, minPayment, loanTerm }) => (
           <BanksListItem
             key={id}
             id={id}
@@ -26,11 +16,8 @@ function BanksList({ items, onDeleteBank, onEditBank }) {
             maxLoan={maxLoan}
             minPayment={minPayment}
             loanTerm={loanTerm}
-            monthPayment={monthPayment}
-            downPayment={downPayment}
             onDeleteBank={onDeleteBank}
             onEditBank={onEditBank}
-            initialLoan={initialLoan}
           />
         )
       )}

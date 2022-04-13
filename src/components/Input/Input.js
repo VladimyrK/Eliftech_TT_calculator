@@ -16,8 +16,6 @@ function Input({ type, placeholder = '', name, value, onChange }) {
   );
 }
 
-export default Input;
-
 Input.propTypes = {
   name: PropTypes.string,
   type: PropTypes.string,
@@ -25,3 +23,5 @@ Input.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
 };
+
+export default Input;
