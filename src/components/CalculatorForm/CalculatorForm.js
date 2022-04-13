@@ -43,7 +43,7 @@ function CalculatorForm({ banks, onSubmit, onCancel, editedBank }) {
         initialLoan,
       });
       reset();
-    } else alert('Please, select bank from droplist in the form');
+    } else alert('Please, select bank from drop-down list in the form');
   };
 
   const reset = () => {
